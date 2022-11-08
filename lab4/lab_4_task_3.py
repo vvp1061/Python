@@ -17,17 +17,32 @@ for i in range(n):
     print(array[i], end=' ')
 print('')
 
-min_num = max(array)
-
-i = n - 1
-while i >= 0:
-
-    if array[i] <= min_num:
-
-        array[i], min_num = min_num, array[i]
-        print('array = ', array[i])
-        print('min', min_num)
-    i -= 1
+array[1:len(array)-1] = sorted(array[1:len(array)-1], reverse=True)
 
 for i in range(n):
     print(array[i], end=' ')
+
+
+del array
+
+array = []
+arrayB = []
+arrayC = []
+
+print('\nИсходный массив А:')
+for i in range(n):
+    array.append(randint(-15, 15))
+    print(array[i], end=' ')
+
+for i in range(n):
+    if array[i] > 0:
+        arrayB.append(array[i])
+    elif array[i] < 0:
+        arrayC.append(array[i])
+
+print("\nДлина массива B: {}\nМассив B:".format(len(arrayB)))
+for i in range(len(arrayB)):
+    print(arrayB[i], end=' ')
+print("\nДлина массива C: {}\nМассив C:".format(len(arrayC)))
+for i in range(len(arrayC)):
+    print(arrayC[i], end=' ')
