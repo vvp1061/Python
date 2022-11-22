@@ -68,3 +68,5 @@ for i in range(N):
             k += 1
         print("\t%3d" % (A[i][j]), end=' ')
     print()
+
+  

@@ -16,6 +16,7 @@ while x1 <= x2:
     Sx = 0
     for k in range(1, n + 1):
         Sx += ((-1) ** (k + 1)) * ((x1 ** (2 * k)) / (2 * k * (2 * k - 1)))
+        # print('k =' , k)
     print("%3d | %3.3f" % (x1, Sx))
     x1 += h
 

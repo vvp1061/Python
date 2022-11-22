@@ -48,3 +48,23 @@ while i >= 0:
 print('Массив после удаления:')
 for i in range(len(array)):
     print(array[i], end=' ')
+
+del array
+array = []
+print()
+n = int(input('Введите n: '))
+
+for i in range(n):
+    array.append(random.randint(-15, 15))
+    print(array[i], end=' ')
+print()
+
+for i in range(n-1, -1, -1):
+    if abs(array[i]) % 2 != 0 and i % 2 != 0:
+        array.insert(i, '*')
+print()
+
+for i in range(len(array)):
+    print(array[i], end=' ')
+print()
+

@@ -16,7 +16,7 @@ for word in myStr:
         if (word.find('*') != -1) or (word.find('/') != -1) or (word.find('+')) != -1 or (word.find('-') != -1):
             fnd = max(word.find('*'), word.find('/'), word.find('+'), word.find('-'))
             f1 = word[0:fnd]
-            f2 = word[fnd + 1:len(word)]
+            f2 = word[fnd+1:len(word)]
             Signa = word[fnd]
     if Signa == '+':
         print("{}+{}={}".format(int(f1), int(f2), int(f1) + int(f2)))
@@ -28,4 +28,4 @@ for word in myStr:
         if Signa == '/' and f2 != 0:
             print("{}/{}={}".format(int(f1), int(f2), int(f1) / int(f2)))
     except ZeroDivisionError:
-        print('Деление на 0 невозможно')
+            print('Деление на 0 невозможно')
