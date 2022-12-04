@@ -20,10 +20,11 @@ for i in range(1, 101):
     numbers.append(randint(1, 50))
 
 print(numbers)
-
+mn = set()
 for i in numbers:
     if perfectNumber(i):
         perfNumbers.append(i)
-
-print(sorted(perfNumbers))
-print('Совершенных чисел:', len(perfNumbers))
+        mn.add(i)
+# print(sorted(perfNumbers))
+print(sorted(mn))
+# print('Совершенных чисел:', len(perfNumbers))

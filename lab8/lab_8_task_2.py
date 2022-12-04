@@ -5,9 +5,23 @@
 # имеющего тип letters.
 # Составить, программу, использующую эту процедуру.
 
-def letters():
+# def letters():
+#     alphabet = "abcdefghijklmnopqrstuvwxyz"
+#     return sorted(set(alphabet))
+#
+#
+# print(letters())
+
+def letters(str):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
-    return sorted(set(alphabet))
+    alphabet = sorted(set(list(alphabet)))
+    str = set(list(str))
+    outset = set()
+    for i in str:
+        if i in alphabet:
+            outset.add(i)
+    print(len(outset))
+    return sorted(outset)
 
-
-print(letters())
+s = input('Введите строку: ')
+print(letters(s))

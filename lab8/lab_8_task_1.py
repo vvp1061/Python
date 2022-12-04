@@ -6,8 +6,12 @@ secondset = {'d', 'e', 'f', 'g', 'h', 'i'}
 thirdset = {1, 2, 3, 4, 5, 6}
 forthset = {5, 6, 7, 8, 9, 10}
 
-
+print('Исхдное множество 1: \n', firstset)
+print('Исхдное множество 2: \n', secondset)
+print('Исхдное множество 3: \n', thirdset)
+print('Исхдное множество 4: \n', forthset)
 print('Объединение')
+
 print(firstset | secondset)
 
 print('Пересечение')
